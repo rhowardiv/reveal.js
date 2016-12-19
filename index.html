@@ -1,50 +1,340 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+	<title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+<div class="reveal">
+	<div class="slides">
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<section
+			data-background-image="img/wizard-powers-finn-jake.jpg"
+			data-background-size="contain"
+			>
+			<h1
+				style="color:white; background-color: rgba(0,0,0,0.5)"
+				>(VIM-NERD)</h1>
+		</section>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+		<section>
+			<img style="border-width:0"
+			src="img/wizard-power-graph.png">
+		</section>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+		<section
+			data-background-image="img/abracadaniel.jpg">
+		</section>
+
+		<section
+			data-background-image="img/old_wizard.png"
+			data-background-size="contain">
+		</section>
+
+		<section>
+			<h1 style="font-size: 40vh">text</h1>
+			The universal medium
+			<aside class="notes">
+				vim is not a code editor--it's a <i>text</i>
+				editor
+			</aside>
+		</section>
+
+		<!--section>
+			A glimpse of the rare code editor
+			<iframe width="840" height="472.5"
+				src="https://www.youtube.com/embed/-AmzfhV2hIU#t=5m28s"
+				frameborder="0" allowfullscreen></iframe>
+		</section-->
+
+		<section>
+			ubiquity<br>
+			universality<br>
+			power<br>
+			scale<br>
+		</section>
+
+		<section>
+			<h1>Level 0</h1>
+			Cantrips
+		</section>
+
+		<section>
+			vim, I can't quit you<br>
+			:qa<br>
+			:w<br>
+			:q!
+		</section>
+
+		<section
+			data-background-image="img/KindofBlueAlbum.jpg"
+			data-background-size="contain">
+			<h1
+				style="color:white; background-color: rgba(0,0,0,0.5)"
+				>HOLY SHIT MODES</h1>
+			<aside class="notes">
+				Modes vs chords ha ha
+				In vim when you stop typing you can hit &lt;Esc&gt; and
+				start using all those beautiful keys to do other things.
+			</aside>
+		</section>
+
+		<section>
+			&lt;Esc&gt;
+		</section>
+
+		<section>
+			DIY
+			<aside class="notes">inhabit your beginnerhood</aside>
+		</section>
+
+		<section>
+			:help<br>
+			:helpgrep
+		</section>
+
+		<section>
+			<img style="float:right" src="img/magic-missile.jpg">
+			<h1>Level 1</h1>
+			Let's do this
+		</section>
+
+		<section>
+			gross movement<br>
+			gg<br>
+			G<br>
+			zz zt zb<br>
+			M H L<br>
+			&lt;n&gt;%
+		</section>
+
+		<section>
+			u &larr; undo<br>
+			CTRL-R &larr; redo<br>
+			. &larr; do again!
+			<aside class="notes">the dot is the magic missile</aside>
+		</section>
+
+		<section>
+			u &larr; undo<br>
+			CTRL-R &larr; redo<br>
+			<p style="font-size: 20vh">. &larr; do again!</p>
+		</section>
+
+		<section>
+			basic motions<br>
+			h j k l<br>
+			w e W E<br>
+			b B<br>
+			} {<br>
+			%
+		</section>
+
+		<section>
+			<img style="float:right" src="img/nekkid.png">
+			<h1>Level 2</h1>
+			The awkward phase
+		</section>
+
+		<section>
+			movement within a line<br>
+			0 ^ $<br>
+			f F<br>
+			t T<br>
+			; ,
+		</section>
+
+		<section>
+			handy text objects<br>
+			{i,a}{w,W,',`,",[,{,&lt;,(,b,B,t,p}<br>
+			<br>
+			"inner" vs "ambient" (or "all" or "a")<br>
+			word<br>
+			block "()"<br>
+			Block "{}"<br>
+			tag (html)<br>
+			paragraph<br>
+			(vim-surround adds "s" "surrounding")
+		</section>
+
+		<section>
+			linewise formatting<br>
+			gq<br>
+			J<br>
+		</section>
+
+		<section>
+			indentation<br>
+			&gt;<br>
+			&lt;<br>
+			=
+		</section>
+
+		<section>
+			buffers<br>
+			:set hidden<br>
+			:b<br>
+			CTRL-^
+			:bufdo (:windo, :argdo)
+		</section>
+
+		<section>
+			windows<br>
+			:vs<br>
+			:sp<br>
+			CTRL-{H,J,K,L}<br>
+			:nnoremap &lt;C-h&gt; &lt;C-w&gt;h<br>
+			CTRL-W o<br>
+			CTRL-W c
+			CTRL-W {=,&lt;,&gt;,+,-}
+			CTRL-W g CTRL-]
+		</section>
+
+		<section>
+			:tabs<br>
+			:tabe ...<br>
+			:tab tj ...<br>
+			gt gT<br>
+			:tabc<br>
+			:tabo
+		</section>
+
+		<section>
+			<img style="float:right;width:50%" src="img/fireball.jpg">
+			<h1>Level 3</h1>
+			FIREBALL!
+		</section>
+
+		<section>
+			jumplist
+			<br>
+			CTRL-O (CTRL-I)
+		</section>
+
+		<section>
+			registers
+		</section>
+
+		<section>
+			spellcheck
+		</section>
+
+		<section>
+			autocomplete
+		</section>
+
+		<section>
+			diffing
+		</section>
+
+		<section>
+			in-buffer searching
+			*<br>
+			#<br>
+			:set hlsearch<br>
+			:noh<br>
+			/<br>
+			:set incsearch<br>
+			:set ignorecase / :set smartcase
+		</section>
+
+		<section>
+			tags
+		</section>
+
+		<section>
+			grepping + "quickfix" list
+		</section>
+
+		<section>
+			visual selection
+		</section>
+
+		<section>
+			in / out / filter<br>
+			:r !...<br>
+			:w !...<br>
+			:w !sudo tee '%' &gt;/dev/null<br>
+			:.,+5!...<br>
+			:%!...
+		</section>
+
+		<section>
+			Strong &lt;Leader&gt;ship<br>
+			:map
+		</section>
+
+		<section>
+			:mksess
+		</section>
+
+		<section>
+			:set list
+			ga
+		</section>
+
+		<section
+			data-background-image="img/unearthedarcana.jpg"
+			data-background-size="contain">
+		</section>
+
+		<section>
+			<iframe width=800 height=600
+				src="http://www.vim.org/sponsor/hall_of_honour.php">
+			</iframe>
+		</section>
+
+		<section>
+			<h2>Real wizards</h2>
+			Drew Neil<br>
+			Bill Odom<br>
+			Tim Pope<br>
+			Damian Conway<br>
+			<a
+			href="http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/"
+			>Yehuda Katz</a><br>
+			Tom Ryder (Arabesque)<br>
+			Gary Bernhardt
+	</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+	// More info https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: false,
+		progress: false,
+		history: true,
+		help: false,
+		transition: 'fade',
+
+		// More info https://github.com/hakimel/reveal.js#dependencies
+		dependencies: [
+			{ src: 'plugin/markdown/marked.js' },
+			{ src: 'plugin/markdown/markdown.js' },
+			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+		]
+	});
+</script>
+</body>
 </html>
